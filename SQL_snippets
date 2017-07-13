@@ -6,3 +6,7 @@ SELECT Zip, City, COUNT(*)
 FROM PersonHouseholdAddress
 GROUP BY Zip, City
 ORDER BY City
+
+SELECT DISTINCT City
+FROM PersonHouseholdAddress
+ORDER BY City
