@@ -10,3 +10,13 @@ ORDER BY City
 SELECT DISTINCT City
 FROM PersonHouseholdAddress
 ORDER BY City
+
+SELECT TOP 1000 * FROM [DataBridge_Ben].[dbo].[PersonHouseholdAddress]
+ORDER BY Zip DESC --Default is ASC
+
+SELECT TOP 1000 *
+FROM BB2_PersonAssessment PA
+
+INNER JOIN BB_PersonHistory PH
+ON PH.PersonID = PA.PErsonID
+AND PH.DateMonthlyKey = PA.DateMonthlyKey
