@@ -1,0 +1,8 @@
+
+SELECT TOP 1000 * FROM [DataBridge_Ben].[dbo].[PersonHouseholdAddress]
+ORDER BY Zip DESC --Default is ASC
+
+SELECT Zip, City, COUNT(*)
+FROM PersonHouseholdAddress
+GROUP BY Zip, City
+ORDER BY City
