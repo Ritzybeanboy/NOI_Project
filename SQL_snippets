@@ -20,3 +20,15 @@ FROM BB2_PersonAssessment PA
 INNER JOIN BB_PersonHistory PH
 ON PH.PersonID = PA.PErsonID
 AND PH.DateMonthlyKey = PA.DateMonthlyKey
+
+SELECT TOP 1000 * 
+FROM PersonHouseholdAddress 
+WHERE Zip = 99999
+
+SELECT TOP 1000 * 
+FROM PersonHouseholdAddress	
+WHERE Zip IN (99999, 0)
+
+SELECT TOP 1000 * 
+FROM PersonHouseholdAddress 
+WHERE City = 'Bolton'
